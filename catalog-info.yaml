@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: backstage-test
+  description: |
+    Uma API de teste para criar uma documentação no Backstage.
+  links:
+    - title: BASE URL
+      url: http://url-da-sua-api.com
+    
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: openapi
+  owner: guests
+  lifecycle: experimental
+  definition: https://petstore.swagger.io/v2/swagger.json
